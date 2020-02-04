@@ -10,7 +10,7 @@ RUN dnf upgrade -y && \
        rpm-ostree \
        dumb-init
 
-WORKDIR /opt
+WORKDIR /var/defs
 ADD files/compose.sh /opt/compose.sh
 RUN mkdir -p /var/www && chmod +x /opt/compose.sh
 
