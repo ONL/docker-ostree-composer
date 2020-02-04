@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ ! -d /var/www/repo ]; then
   mkdir -p /var/www/repo
   mkdir -p /var/www/cache
