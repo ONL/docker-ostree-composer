@@ -8,7 +8,8 @@ ENV GPG_KEY ABC12345
 RUN dnf upgrade -y && \
     dnf install -y \
        rpm-ostree \
-       dumb-init
+       dumb-init \
+    && dnf clean all
 
 WORKDIR /var/defs
 ADD files/compose.sh /opt/compose.sh
